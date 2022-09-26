@@ -19,11 +19,12 @@
 
 |   Info      |        Description     |
 | ----------- | ---------------------- |
-|  Title      |           TBD          |
+|  Title      | Help me graduate ECE:( |
 | System URL  |           TBD          |
 | Video Link  |           TBD          |
 
 ## Project Summary
 
-This is a summary of the project!
-Coming Soon!
+This is a summary of the project:
+
+We will create a website that will increase the rate of graduation for ECE majors. This will help incoming freshmen in ECE plan out their academic schedules for their 4 years at UIUC and choose professors. This is also a good website for sophomores, juniors and seniors to reference back to during course selection. 
