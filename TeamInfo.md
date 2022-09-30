@@ -19,7 +19,7 @@
 
 |   Info      |        Description     |
 | ----------- | ---------------------- |
-|  Title      | Help me graduate ECE:( |
+|  Title      | Help me graduate ECE   |
 | System URL  |           TBD          |
 | Video Link  |           TBD          |
 
