@@ -15,7 +15,7 @@ PRIMARY KEY (CRN));
 CREATE TABLE Professors(
 ProfessorID INT NOT NULL,
 ProfessorName VARCHAR(50),
-Rate VARCHAR(10),
+Rate INT,
 Deparment VARCHAR(15),
 PRIMARY KEY (ProfessorID));
 
