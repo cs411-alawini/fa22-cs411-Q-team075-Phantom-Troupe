@@ -17,11 +17,11 @@
 
 ## Project Information
 
-|   Info      |        Description     |
-| ----------- | ---------------------- |
-|  Title      | Help me graduate ECE   |
-| System URL  |           TBD          |
-| Video Link  |           TBD          |
+|   Info      |        Description                                                       |
+| ----------- | ------------------------------------------------------------------------ |
+|  Title      | Help me graduate ECE                                                     |
+| System URL  |https://github.com/cs411-alawini/fa22-cs411-Q-team075-Phantom-Troupe.git  |
+| Video Link  |           TBD                                                            |
 
 ## Project Summary
 
