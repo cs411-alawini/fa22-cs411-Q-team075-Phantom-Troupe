@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <title>Help Me Graduate System</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+ </head>
+
+ <body>
+   <div class="container mt-4">
+     <div class="card">
+       <div class="card-body">
+	<h1>Successfully login, please choose the operation you want.</h1>
+	<div>
+	<h1>Operations for UserInfo</h1>
+	</div>
+         <h2>Delete from all users, please enter the UserId of the User you want to delete.</h2>
+         <form action="mark2" method="POST">
+           <div class="form-group">
+             <label for="UserID">User ID</label>
+             <input type="text" class="form-control col-lg-9" id="UserId" aria-describedby="emailHelp" placeholder="Enter User ID" name="UserID">
+           </div>
+           <button type="submit" class="btn btn-primary">Submit</button>
+         </form>
+	<h2>Search from all users, please enter the UserId of the User you want to serach.</h2>
+         <form action="searchusers" method="POST">
+           <div class="form-group">
+             <label for="UserID">User ID</label>
+             <input type="text" class="form-control col-lg-9" id="UserId" aria-describedby="emailHelp" placeholder="Enter User ID" name="UserID">
+           </div>
+           <button type="submit" class="btn btn-primary">Submit</button>
+         </form>
+	<h2>Update one user, please enter the UserId of the User you want to update.</h2>
+         <form action="updateusers" method="POST">
+	     <div class="form-group">
+             <label for="UserID">User ID</label>
+             <input type="text" class="form-control col-lg-9" id="UserId" aria-describedby="emailHelp" placeholder="Enter User ID" name="UserID">
+           </div>
+           <div class="form-group">
+             <label for="UserFirstName">Update First Name</label>
+             <input type="text" class="form-control col-lg-9" id="UserFirstName" aria-describedby="emailHelp" placeholder="Enter First Name" name="UserFirstName">
+           </div>
+           <div class="form-group">
+            <label for="UserLastName">Update Last Name</label>
+            <input type="text" class="form-control col-lg-9" id="UserLastName" aria-describedby="emailHelp" placeholder="Enter Last Name" name="UserLastName">
+          </div>
+           <button type="submit" class="btn btn-primary">Submit</button>           
+         </form>
+	<div>
+	<h1>Operations for Courses</h1>
+	</div>
+	<h3>Enter the Course Department you want to search</h3>
+        <form action="normalq1" method="POST">
+	<div class="form-group">
+            <label for="Course_Dep">Course Department</label>
+            <input type="text" class="form-control col-lg-9" id="Course_Dep" aria-describedby="emailHelp" placeholder="Enter Course Department" name="Course_Dep">
+           </div>
+           <button type="submit" class="btn btn-primary">Go!</button>
+         </form>
+	<div>
+	<h1>Operations for Advanced Queries</h1>
+	</div>
+	<h3>Recommand ECE courses with high GPA and low difficulty level</h3>
+	<form action="advq1" method="POST">
+           <button type="submit" class="btn btn-primary">You should take these!</button>
+         </form>
+	<h3>Recommand CS courses taught by higher-rated professors</h3>
+        <form action="advq2" method="POST">
+           <button type="submit" class="btn btn-primary">You should take these!</button>
+         </form>
+   </div>
+ </div>
+ </body>
+</html>
