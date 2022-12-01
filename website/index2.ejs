@@ -59,7 +59,28 @@
            <button type="submit" class="btn btn-primary">Go!</button>
          </form>
 	<div>
-	<h1>Operations for Advanced Queries</h1>
+	<h1>Rate Your Professor!</h1>
+	<h4>Match your Professor's ID and Name if you are not sure</h4>
+	<form action="searchp" method="POST">
+           <div class="form-group">
+             <label for="PID">ProfessorID</label>
+             <input type="text" class="form-control col-lg-9" id="ProfessorId" aria-describedby="emailHelp" placeholder="Enter Professor ID" name="ProfessorID">
+           </div>
+           <button type="submit" class="btn btn-primary">Search</button>
+         </form>
+	<h4>Time to Rate!</h4>
+	<form action="ratep" method="POST">
+             <div class="form-group">
+             <label for="PID">ProfessorID</label>
+             <input type="text" class="form-control col-lg-9" id="PID" aria-describedby="emailHelp" placeholder="Enter Professor ID" name="ProfessorID">
+           </div>
+           <div class="form-group">
+             <label for="NewRate">NewRate</label>
+             <input type="text" class="form-control col-lg-9" id="NewRate" aria-describedby="emailHelp" placeholder="Enter New Rate" name="NewRate">
+           </div>
+           <button type="submit" class="btn btn-primary">Update</button>
+         </form>
+	<h1>Help You Graduate -- Courses Recommendations</h1>
 	</div>
 	<h3>Recommand ECE courses with high GPA and low difficulty level</h3>
 	<form action="advq1" method="POST">
@@ -68,6 +89,32 @@
 	<h3>Recommand CS courses taught by higher-rated professors</h3>
         <form action="advq2" method="POST">
            <button type="submit" class="btn btn-primary">You should take these!</button>
+         </form>
+	<h1>Help You Graduate -- Search through Recommend List</h1>
+	<h3>Click to create recommend list</h3>
+	<form action="stpro" method="POST">
+           <button type="submit" class="btn btn-primary">Create List</button>
+         </form>
+	<h3>Select what you want to look up<h3>
+	<h4>Show All of the Recommend List</h4>
+	<form action="stpro1" method="POST">
+           <button type="submit" class="btn btn-primary">ShowList</button>
+         </form>
+	<h4>Show Highly Recommend Courses<h4>
+	<form action="stpro2" method="POST">
+           <button type="submit" class="btn btn-primary">GreatCourses</button>
+         </form>
+	<h4>Search the Course You Plan to Take! If see null, you'd better not take it!</h4>
+         <form action="stpro3" method="POST">
+             <div class="form-group">
+             <label for="Dep">Department</label>
+             <input type="text" class="form-control col-lg-9" id="Dep" aria-describedby="emailHelp" placeholder="Enter Course Department" name="Department">
+           </div>
+           <div class="form-group">
+             <label for="CN">CourseNumber</label>
+             <input type="text" class="form-control col-lg-9" id="CN" aria-describedby="emailHelp" placeholder="Enter Course Number" name="CourseNumber">
+           </div>
+           <button type="submit" class="btn btn-primary">Go!</button>
          </form>
    </div>
  </div>

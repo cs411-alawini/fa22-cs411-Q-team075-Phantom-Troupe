@@ -167,7 +167,96 @@ res.send(result);
 });
 });
 
+app.post('/stpro',function(req,res){
 
+var sql7 = `CALL Result()`; 
+
+console.log(sql7);
+connection.query(sql7,function(err7,result){
+        if(err7){
+        res.send(err7)
+        return;
+}
+res.send("Successfully Created");
+});
+});
+
+app.post('/stpro1',function(req,res){
+
+var sql8 = `SELECT * FROM FinalTable`; 
+
+console.log(sql8);
+connection.query(sql8,function(err8,result){
+        if(err8){
+        res.send(err8)
+        return;
+}
+res.send(result);
+});
+});
+
+app.post('/stpro2',function(req,res){
+
+var sql8 = `SELECT Department,CourseNumber,RecoLevel FROM FinalTable WHERE RecoLevel="Highly Recommended" ORDER BY Department,CourseNumber`; 
+
+console.log(sql8);
+connection.query(sql8,function(err8,result){
+        if(err8){
+        res.send(err8)
+        return;
+}
+res.send(result);
+});
+});
+
+app.post('/stpro3',function(req,res){
+var Dep = req.body.Department;
+
+var CN = req.body.CourseNumber;
+
+var sql4 = `SELECT * FROM FinalTable WHERE Department='${Dep}' AND CourseNumber='${CN}'`;
+
+console.log(sql4);
+connection.query(sql4,function(err4,result){
+        if(err4){
+        res.send(err4)
+        return;
+}
+res.send(result);
+});
+});
+
+app.post('/ratep',function(req,res){
+var PID = req.body.ProfessorID;
+
+var rate = req.body.NewRate;
+
+var sql4 = `UPDATE Professors SET Rate='${rate}' WHERE ProfessorID = '${PID}'`;
+
+console.log(sql4);
+connection.query(sql4,function(err4,result){
+        if(err4){
+        res.send(err4)
+        return;
+}
+res.send('Update successfully');
+});
+});
+
+app.post('/searchp',function(req,res){
+var PID = req.body.ProfessorID;
+
+var sql4 = `SELECT ProfessorName,Department,Rate FROM Professors WHERE ProfessorID = '${PID}'`;
+
+console.log(sql4);
+connection.query(sql4,function(err4,result){
+        if(err4){
+        res.send(err4)
+        return;
+}
+res.send(result);
+});
+});
 app.listen(80, function () {
     console.log('Node app is running on port 80');
 });
